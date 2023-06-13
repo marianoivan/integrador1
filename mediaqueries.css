@@ -1,0 +1,143 @@
+@media (max-width: 992px){
+    /*menu*/
+    
+    .lista{
+        position: absolute;
+        top:85;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #ebebeb;
+        padding:40px 0;
+        border-radius:  0 0 15px 15px;
+        border: 2px solid black;
+        border-top: none;
+        z-index: 2;
+        gap: 50px;
+        display: none;
+        
+
+    }
+
+    .lista a{
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .menu{
+        font-size: 30px;
+        display: flex;
+        order: 2;
+        cursor: pointer;
+        color: #ebebeb;
+    }
+
+    #toggle-menu:checked + .lista{
+        display: flex;
+    }
+
+    /*section1*/
+
+    .tienda{
+        display: none;
+
+    }
+
+    .inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 250px;
+        
+        
+    }
+
+    .inicio p{
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+    }
+
+    .inicio h1{
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .conte{
+        min-width: 300px;
+    }
+
+    /*INFO*/
+
+    .section-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info{
+        margin: 20px 0;
+    }
+
+    .info-container{
+        max-width: 500px;
+        margin-top: 100px;
+    
+    }
+
+    /*PRODUCTOS*/
+    
+    .section-producto{
+        display: flex;
+        
+    }
+    
+    .productos-container{
+        display: flex;  
+        flex-direction: column;
+        width: 100%;
+        
+        
+    }
+
+    .producto{
+        min-width: 250px;
+    }
+
+    .producto img{
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width:576px){
+
+
+    .cart{
+        width: 100%;
+        left: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+
+    
+
+
+    .compras-title h2{
+        margin: 30px 0 0 0;
+    }
+}

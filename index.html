@@ -4,20 +4,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/09e14f4b3b.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <img src="./img/logoo.png" class="logo">
         <nav class="nav">
+            <label for="toggle-menu" class="menu"><i class="fa-solid fa-bars icon-menu"  style="color: #0cd5e4;"></i></label>
+        <input type="checkbox" id="toggle-menu">
             <ul class="lista">
                 <li><a href="#">inicio</a></li>
                 <li><a href="#">nosotros</a></li>
                 <li><a href="#">productos</a></li>
                 <li><a href="#">contactos</a></li>
             </ul>
+            <label for="cart-toggle" class="cart-label">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </label>
+            <input type="checkbox" id="cart-toggle">
+            <!--productos del carrito-->
+            <div class="cart">
+
+                <div class="compras-title"><h2>Mis compras</h2></div>
+                <div class="cart-item">
+                    <img src="./img/camara-removebg-preview.png" class="campera-carrito">
+                    <div class="item-info">
+                        <h3 class="item-title">camara de seguridad</h3>
+                        <div class="item-cantidad">
+                            <span class="simbolos substrac">-</span>
+                            <span class="cantidad" >1</span>
+                            <span class="simbolos add">+</span>
+                        </div>
+                        <span>$20.000</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="./img/camara-removebg-preview.png" class="campera-carrito">
+                    <div class="item-info">
+                        <h3 class="item-title">camara de seguridad</h3>
+                        <div class="item-cantidad">
+                            <span class="simbolos substrac">-</span>
+                            <span class="cantidad" >1</span>
+                            <span class="simbolos add">+</span>
+                        </div>
+                        <span>$20.000</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="./img/camara-removebg-preview.png" class="campera-carrito">
+                    <div class="item-info">
+                        <h3 class="item-title">camara de seguridad</h3>
+                        <div class="item-cantidad">
+                            <span class="simbolos substrac">-</span>
+                            <span class="cantidad" >1</span>
+                            <span class="simbolos add">+</span>
+                        </div>
+                        <span>$20.000</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="./img/camara-removebg-preview.png" class="campera-carrito">
+                    <div class="item-info">
+                        <h3 class="item-title">camara de seguridad</h3>
+                        <div class="item-cantidad">
+                            <span class="simbolos substrac">-</span>
+                            <span class="cantidad" >1</span>
+                            <span class="simbolos add">+</span>
+                        </div>
+                        <span>$20.000</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="./img/camara-removebg-preview.png" class="campera-carrito">
+                    <div class="item-info">
+                        <h3 class="item-title">camara de seguridad</h3>
+                        <div class="item-cantidad">
+                            <span class="simbolos substrac">-</span>
+                            <span class="cantidad" >1</span>
+                            <span class="simbolos add">+</span>
+                        </div>
+                        <span>$20.000</span>
+                    </div>
+                </div>
+            </div><!--div cart-->
         </nav>
     </header>
 <!--MAIN-->
@@ -29,19 +102,24 @@
                     <h1>¡Bienvenido a ventaclick!</h1>
                     <p>destino perfecto para encontrar una amplia variedad de productos y servicios de alta calidad. tenemos categorias de todo tipo, desde electronica, moda, hogar, tenemos todo lo que necesitas.</p>        
                     <span class="mas-info"><a href="#">ver mas</a></span>
+                </div>
+            
+            
+                <div class="tienda">
+                    <img src="./img/drone.png">
+                </div>
+            
+            
+                
+        
+
             </div>
-            
-            
-            <div class="tienda">
-                <img src="./img/drone.png">
-            </div>
-            </div>
-            
-            
             <div class="ola">
                 <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fb8500;"></path></svg></div>
             </div>
+            
         </section>
+        
 
         <section class="section-info">
         <div class="info-container">
@@ -68,6 +146,7 @@
             </div>
         </div>
         </section>
+        <!--section de cards-->
         <section class="section-productos">
             <div class="productos-container">
                 <div class="producto">
@@ -88,9 +167,6 @@
                         
                     </div>
                 </div>
-            </div>
-            <!--PRODUCTO2-->
-            <div class="productos-container">
                 <div class="producto">
                     <img src="./img/moto-removebg-preview.png" class="auris">
                     <div class="producto-info">
@@ -109,12 +185,155 @@
                         
                     </div>
                 </div>
+                <div class="producto">
+                    <img src="./img/D_NQ_NP_663711-MLA53736325473_022023-V-removebg-preview.png" class="libro">
+                    <div class="producto-info">
+                        <!--top-->
+                        <div class="producto-top">
+                            <h3>Juegos de tronos </h3>
+                        </div>
+
+                        <div class="producto-mid">
+                            <div>
+                                <span>$23.000</span>
+                            </div>
+                            <button type="button" class="comprar">comprar</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="./img/NI_931996-010-1-removebg-preview.png" class="auris">
+                    <div class="producto-info">
+                        <!--top-->
+                        <div class="producto-top">
+                            <h3>Campera Nike therma </h3>
+                        </div>
+
+                        <div class="producto-mid">
+                            <div>
+                                <span>$20.000</span>
+                            </div>
+                            <button type="button" class="comprar">comprar</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="./img/NI_931996-010-1-removebg-preview.png" class="auris">
+                    <div class="producto-info">
+                        <!--top-->
+                        <div class="producto-top">
+                            <h3>Campera Nike therma </h3>
+                        </div>
+
+                        <div class="producto-mid">
+                            <div>
+                                <span>$20.000</span>
+                            </div>
+                            <button type="button" class="comprar">comprar</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="./img/BIC5261SIA-removebg-preview.png" class="auris">
+                    <div class="producto-info">
+                        <!--top-->
+                        <div class="producto-top">
+                            <h3>Bicicleta Siambretta  rodeo 29</h3>
+                        </div>
+
+                        <div class="producto-mid">
+                            <div>
+                                <span>$20.000</span>
+                            </div>
+                            <button type="button" class="comprar">comprar</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="./img/monopatin-removebg-preview.png" class="auris">
+                    <div class="producto-info">
+                        <!--top-->
+                        <div class="producto-top">
+                            <h3>Monopatin electrico </h3>
+                        </div>
+
+                        <div class="producto-mid">
+                            <div>
+                                <span>$20.000</span>
+                            </div>
+                            <button type="button" class="comprar">comprar</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="./img/camara-removebg-preview.png" class="auris">
+                    <div class="producto-info">
+                        <!--top-->
+                        <div class="producto-top">
+                            <h3>Camara de segurida </h3>
+                        </div>
+
+                        <div class="producto-mid">
+                            <div>
+                                <span>$20.000</span>
+                            </div>
+                            <button type="button" class="comprar">comprar</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="./img/silla.png" class="auris">
+                    <div class="producto-info">
+                        <!--top-->
+                        <div class="producto-top">
+                            <h3>silla de escritorio negra </h3>
+                        </div>
+
+                        <div class="producto-mid">
+                            <div>
+                                <span>$20.000</span>
+                            </div>
+                            <button type="button" class="comprar">comprar</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
             </div>
             
             
             
+            
         </section>
-
+        <section id="section-contactos">
+            <div class="contacto">
+                <div class="lista-contacto">
+                    <h2>Contactanos</h2>
+                    <p><i class="fa-sharp fa-solid fa-envelope">113334567</i></p>
+                    <p><i class="fa-sharp fa-solid fa-envelope">ventaclick@gmail.com</i></p>
+                    <p><i class="fa-brands fa-instagram">venta_click</i></p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13103.841659662203!2d-58.38311099999999!3d-34.806937749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd351cc9b8ceb%3A0xc928b264e08a4e22!2sEstadio%20Lorenzo%20Arandilla!5e0!3m2!1ses!2sar!4v1686269302686!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        </section>
+        
+        <footer>
+            <img src="./img/logoo.png">
+        </footer>
     </main>
+    
+
 </body>
 </html>
