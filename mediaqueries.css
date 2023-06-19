@@ -20,6 +20,9 @@
         gap: 50px;
         display: none;
         
+        
+        
+        
 
     }
 
@@ -39,6 +42,10 @@
 
     #toggle-menu:checked + .lista{
         display: flex;
+        
+        
+        
+        
     }
 
     /*section1*/
@@ -54,6 +61,7 @@
         justify-content: center;
         flex-direction: column;
         min-width: 250px;
+        
         
         
     }
@@ -121,23 +129,89 @@
 
 @media (max-width:576px){
 
+    .inicio{
+        width: 100%;
+    }
+
+    
+
+    .logo{
+        width: 120PX;
+    }
+
+
 
     .cart{
         width: 100%;
         left: 0;
         border: none;
-        display: flex;
         align-items: center;
         justify-content: center;
         
     }
 
-
-
     
-
 
     .compras-title h2{
         margin: 30px 0 0 0;
+    }
+
+/*info*/
+
+    .info{
+        width: 275PX;
+        height: 290PX;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+
+    /*contactos*/
+
+    .mapa{
+        width: 200px;
+        height: 200px;
+    }
+
+    .lista-contacto p{
+        font-size: 12px;
+    }
+
+    .lista-contacto h2{
+        font-size: 16px;
+    }
+
+    /*menu hamburguesa*/
+    .lista{
+        width: 100%;
+        background: #f4f3ee;
+        height: calc(100vh - 85px);
+        position: absolute;
+        top: 85px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        transform: translateX(200%);
+        transition: all 0.5s ease;
+        
+        
+    }
+
+    #toggle-menu:checked ~ .lista{
+        transform: translateX(0%);
+        transition: all 0.5s ease;
+        
+        
+        
+    }
+
+    .lista a{
+        font-size: 25px;
+        
+
     }
 }

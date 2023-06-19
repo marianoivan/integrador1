@@ -16,15 +16,25 @@ body{
 header{
     background: #7209b7;
     height: 85px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     
 }
 
 
-.logo{
+header .logo{
     padding-top: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+header .logo:hover{
+    transform: scale(1.1);
 }
 
 
@@ -43,6 +53,12 @@ header{
     font-size: 24px;
     font-weight: 400;
     color: white;
+    transition: all 0.2 ease-out;
+}
+
+.lista a:hover{
+    color: #f8961e;
+    transition: all 0.2 ease-out;
 }
 
 /*main*/
@@ -142,6 +158,23 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     max-width: 100%;
 }
 
+.fa-cart-shopping{
+    transition-property: all;
+    transition-duration: 0.3;
+    width: 30px;
+    
+    
+}
+
+.fa-cart-shopping:hover{
+    color: #f8961e;
+    transition-property: all;
+    transition-duration: 0.3;
+    
+}
+
+
+
 
 /*section-info*/
 
@@ -174,7 +207,7 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     color: #ebebeb;
     gap: 10px;
     text-align: center;
-    margin-top: 450px;
+    margin-top: 100px;
     
 
 }
@@ -192,7 +225,7 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
 .productos-container{
@@ -201,7 +234,7 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    padding: 40px 0;
+    padding: 20px 0;
     max-width: 1200px;
 }
 
@@ -221,7 +254,7 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     justify-content: center;
     align-items: center;
     gap: 35px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 25%;
     overflow: hidden;
     
@@ -289,7 +322,7 @@ background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, F
     justify-content: space-around;
     width: 100%;
     background: #f8961e;
-    margin-top: 400px;
+    margin-top: 100px;
     flex-wrap: wrap;
     padding: 40px 0;
 }
@@ -370,7 +403,10 @@ footer img{
     overflow-y: scroll;
     z-index: 2;
     background: #ebebeb;
-    display: none;
+    transform: translate(200%);
+    transition: all 0.5s;
+    
+    
     
 }
 
@@ -396,7 +432,8 @@ nav, label, i{
 }
 
 #cart-toggle:checked + .cart{
-    display: flex;
+    transform: translate(0%);
+    transition: all 0.5s;
 }
 
 /*item info*/
@@ -493,7 +530,15 @@ nav, label, i{
 .menu{
     display: none;
 }
+.icon-menu{
+    transition-property: all;
 
+}
+
+.icon-menu{
+    transition-property: all;
+    color:#f4f3ee;
+}
 
 
 /*mediaquerie*/

@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    
+
+}
+
+main{
+    width: 100%;
+    background: #DA22FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+
+}
+
+header{
+    background: #7209b7;
+    height: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    
+}
+
+.formulario{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    background: white;
+    
+}
