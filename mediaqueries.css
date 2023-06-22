@@ -170,8 +170,12 @@
     /*contactos*/
 
     .mapa{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .contacto{
+        margin-left: 5PX;
     }
 
     .lista-contacto p{
@@ -214,4 +218,5 @@
         
 
     }
+
 }
