@@ -8,30 +8,37 @@
 <body>
     <header>
         <nav class="nav-logo">
-            <img src="./img/logoo.png">
+            <a href="index.html">
+                <img src="./img/logoo.png" class="logo">
+            </a>
         </nav>
     </header>
     <main>
+        <section class="section-formulario">
+            <form>
         <div class="formulario">
-            <h1>iniciar sesion</h1>
+            <h1>Iniciar sesion</h1>
             <div>
-                <label for="email">nombre de usuario</label>
-                <input type="email" id="email">
+                <label for="email" class="label-estilos"></label>
+                <input type="email" id="email" placeholder="email" class="inputt">
             </div>
             <div>
-                <label for="contraseña">contraseña</label>
-                <input type="password" id="contraseña">
+                <label for="contraseña"></label>
+                <input type="password" id="contraseña" placeholder="contraseña" class="inputt">
                 
             </div>
+            <button>Iniciar sesion</button>
             <div class="sesion">
-                <p>¿olvidaste tu contraseña?</p>
+                <div class="cambiar"><a>¿Olvidaste tu contraseña?</a></div>
+                <div class="cambiar"><a href="registrar.html">¿Todavia no te registraste?</a></div>
             </div>
-            <button>iniciar sesion</button>
-            <div class="registrarme">
-                <a>¿todavia no te registraste?</a>
-            </div>
+            
+            </form>
         </div>
 
+
+        </section>
+        
     </main>
 </body>
 </html>

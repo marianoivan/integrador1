@@ -86,7 +86,7 @@
 
     /*INFO*/
 
-    .section-info{
+    #section-info{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -104,7 +104,7 @@
 
     /*PRODUCTOS*/
     
-    .section-producto{
+    #section-producto{
         display: flex;
         
     }
