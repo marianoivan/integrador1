@@ -33,7 +33,7 @@ header{
 }
 
 header .logo{
-    width: 120px;
+    
     padding-top: 15px;
     transition: all 0.3s;
     cursor: pointer;
@@ -155,6 +155,10 @@ button:hover{
     }
     .contenedor-registrar h1{
         font-size: 20px;
+    }
+
+    header .logo{
+        width: 120px;
     }
 
 
